@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Singh - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --light-text: #7f8c8d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-item i {
+            color: var(--secondary-color);
+        }
+        
+        section {
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--secondary-color);
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: var(--dark-color);
+            margin: 10px 0 5px;
+        }
+        
+        .summary p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .skill-list li:before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .education-item, .certification-item, .project-item, .achievement-item {
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            color: var(--light-text);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .project-description, .certification-description {
+            margin-top: 8px;
+        }
+        
+        .tools-used {
+            font-size: 0.9rem;
+            color: var(--light-text);
+            margin-top: 5px;
+        }
+        
+        .tools-used span {
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        
+        @media (max-width: 600px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            section {
+                padding: 20px 15px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        section {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="header-content">
+                <h1>Arya Singh</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bhubaneshwar, Odisha</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aryasingswell@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>7587314626</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Committed to the Development of Skills and Gaining Knowledge for Achievement. I am looking for a challenging role in a well-known organization where I can learn new things, enhance my knowledge, and implement my learnings efficiently. Being a hardworking and self-driven person, I am dedicated to self-improvement and always work towards fulfilling my goals.</p>
+        </section>
+        
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <ul class="skill-list">
+                        <li><strong>Programming:</strong> Python, C, C++</li>
+                        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Database:</strong> MySQL</li>
+                        <li><strong>Libraries:</strong> NumPy, Scikit-learn, TensorFlow, Pandas</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <ul class="skill-list">
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>Operating Systems</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <ul class="skill-list">
+                        <li>Teamwork</li>
+                        <li>Leadership</li>
+                        <li>Strong Communication</li>
+                        <li>Decision Making</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Kalinga Institute of Industrial Technology</h3>
+                <div class="date">2022 - 2026</div>
+                <p>B.Tech in Information Technology</p>
+                <p>CGPA: 7.13</p>
+            </div>
+            <div class="education-item">
+                <h3>DAV Public School, Korba, Chhattisgarh</h3>
+                <div class="date">12th Science</div>
+                <p>Percentage: 71%</p>
+            </div>
+            <div class="education-item">
+                <h3>DAV Public School, Korba, Chhattisgarh</h3>
+                <div class="date">10th Science</div>
+                <p>Percentage: 70%</p>
+            </div>
+        </section>
+        
+        <section class="certifications">
+            <h2>Training & Certifications</h2>
+            <div class="certification-item">
+                <h3>ICDCIT Workshop</h3>
+                <div class="date">2025</div>
+                <div class="certification-description">
+                    Successfully completed workshop of International Conference on Distributed Computing and Intelligence Technology
+                </div>
+            </div>
+            <div class="certification-item">
+                <h3>Python Full Stack Developer Virtual Internship</h3>
+                <div class="date">2024</div>
+                <div class="certification-description">
+                    Successfully completed AICTE-Eduskills Virtual Internship
+                </div>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Weather API</h3>
+                <div class="project-description">
+                    A Weather API is a web-based application programming interface that provides access to current and forecasted weather conditions. Returns current weather conditions for a specific location.
+                </div>
+                <div class="tools-used"><span>Tools Used:</span> HTML, CSS, JavaScript</div>
+            </div>
+            <div class="project-item">
+                <h3>Personal Portfolio Website</h3>
+                <div class="project-description">
+                    Built a personal portfolio website showcasing skills and projects achievements to potential employers, clients, or collaborators to attract opportunities (jobs, projects, collaborations).
+                </div>
+                <div class="tools-used"><span>Tools Used:</span> HTML, CSS, JavaScript</div>
+            </div>
+            <div class="project-item">
+                <h3>Arthritis Grade Detection Using Machine Learning</h3>
+                <div class="date">2022</div>
+                <div class="project-description">
+                    Arthritis grade detection using Python and machine learning involves the development of a system that can automatically classify the severity or grade of arthritis from medical imaging data, such as X-rays. Arthritis is a joint disorder that can be graded based on severity (e.g., mild, moderate, severe).
+                </div>
+                <div class="tools-used">
+                    <span>Programming Language:</span> Python<br>
+                    <span>Libraries:</span> NumPy, Scikit-learn, TensorFlow, Pandas<br>
+                    <span>Evaluation Metrics:</span> Accuracy, Precision, Confusion Matrix, Recall, F1-score
+                </div>
+            </div>
+        </section>
+        
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="achievement-item">
+                <h3>Cultural Achievements</h3>
+                <ul class="skill-list">
+                    <li>Awarded winner in Rangoli competition G20 (2023)</li>
+                    <li>Completed 4-year course successfully in classical music with distinction</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
